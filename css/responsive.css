@@ -5,6 +5,48 @@
         max-width: 768px;
     }
 
+    /* MAIN */
+    /* Section Download Java */
+    .section-download-java .container .photo-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Section Download JDK */
+    .section-download-jdk .container{
+        display: flex;
+    }
+
+    .section-download-jdk .container .logo-wrapper{
+        width: 8%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .section-download-jdk .container .text-wrapper{
+        width: 40%;
+        font-size: .7rem;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .section-download-jdk .container .button-wrapper{
+        width: 50%;
+        font-size: .6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    /* FOOTER */
+    footer .container ul li:first-child{
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
 }
 
 
@@ -64,7 +106,28 @@
     .section-download-java .description-wrapper .info-wrapper{
         margin-top: 4em;
     }
+
     .section-download-java .photo-wrapper{
         width: 30%;
+    }
+
+    /* Section Download JDK */
+    .section-download-jdk .container{
+        width: 70%;
+    }
+
+    .section-download-jdk .container .text-wrapper{
+        font-size: 1rem;
+    }
+
+    .section-download-jdk .container .button-wrapper{
+        font-size: .8rem;
+        justify-content: flex-end;
+    }
+
+    /* FOOTER */
+    footer .container{
+        margin-top: 3em;
+        margin-bottom: 0;
     }
 }

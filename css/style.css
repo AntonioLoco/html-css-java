@@ -13,7 +13,9 @@
 /* COLOR */
 :root{
     --light-blue: #3A75B0;
+    --light-cian: #7192AE;
     --green: #198754;
+    --grey: #7A736E;
 }
 
 /* COMMON */
@@ -23,12 +25,9 @@ html{
 }
 
 .container{
-    width: 90%;
+    width: 95%;
     max-width: 480px;
     margin: 0 auto;
-
-    /* DEBUG */
-    border: 1px solid black;
 }
 
 .flex{
@@ -70,6 +69,11 @@ a.btn.green{
     color: white;
     padding: .8em 3em;
     background-color: var(--green);
+}
+
+a.btn.white{
+    color: white;
+    border: 1px solid white;
 }
 
 /* Margin */
@@ -155,6 +159,42 @@ header .container{
 }
 
 .section-download-java .container .info-wrapper{
-    color: blue;
+    color: var(--light-cian);
     font-size: 1rem;
 }
+
+/* Section Download JDK */
+section.section-download-jdk{
+    color: white;
+    background-color: var(--grey);
+}
+
+.section-download-jdk .container{
+    padding: 2em 0;
+}
+
+.section-download-jdk .button-wrapper{
+    font-size: .8rem;
+}
+
+.section-download-jdk .button-wrapper a.btn{
+    margin-left: .6em;
+}
+
+/* FOOTER */
+footer .container{
+    width: 85%;
+    text-align: center;
+    font-size: .8rem;
+    color: var(--light-cian);
+}
+
+footer .container ul li:first-child{
+    display: block;
+    margin-bottom: .7em;
+}
+
+footer .container ul li{
+    margin: .2em .5em;
+}
+
