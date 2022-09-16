@@ -57,6 +57,10 @@ ul li a{
     text-decoration: none;
 }
 
+ul.link-list li a:hover{
+    text-decoration: underline;
+}
+
 /* Buttons */
 a.btn{
     text-decoration: none;
@@ -71,9 +75,18 @@ a.btn.green{
     background-color: var(--green);
 }
 
+a.btn.green:hover{
+    background-color: rgb(2, 102, 2);
+}
+
 a.btn.white{
     color: white;
     border: 1px solid white;
+}
+
+a.btn.white:hover{
+    background-color: #fff;
+    color: black;
 }
 
 /* Margin */
@@ -94,17 +107,23 @@ a.btn.white{
 }
 /* HEADER */
 header{
+    width: 100%;
     background-color: var(--light-blue);
     height: var(--header-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
+
 header .container{
     height: var(--header-height);
 }
 
 /* Logo */
 .container .header-logo{
-    width: 25%;
     color: white;
+    cursor: pointer;
 }
 
 .header-logo i{
@@ -119,9 +138,12 @@ header .container{
 
 /* Menu */
 .container .header-menu{
-    width: 75%;
     display: flex;
     align-items: center;
+}
+
+.header-menu ul li:hover{
+    color: rgb(192, 127, 7);
 }
 
 .header-menu .hamburger{
@@ -140,7 +162,7 @@ header .container{
     display: none;
 }
 
-.header-menu #search-bar{
+.header-menu .search-bar{
     display: none;
 }
 
@@ -150,6 +172,7 @@ header .container{
 .section-download-java .container{
     width: 60%;
     text-align: center;
+    margin-top: 8em;
 }
 
 .section-download-java .container .text-wrapper h1{
