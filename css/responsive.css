@@ -1,0 +1,47 @@
+/* Tablet Sceen */
+@media screen and (min-width: 480px) {
+    /* COMMON */
+    .container{
+        max-width: 768px;
+    }
+
+}
+
+
+/* Desktop Screen */
+@media screen and (min-width: 769px){
+    /* COMMON */
+    .container{
+        max-width: 1200px;
+    }
+
+    /* HEADER */
+
+    /* Logo */
+    .container .header-logo{
+        width: 10%;
+    }
+
+    /* Menu */
+    .container .header-menu{
+        width: 90%;
+        justify-content: space-between;
+    }
+    .header-menu .hamburger{
+        display: none;
+    }
+
+    .header-menu .header-list{
+        display: block;
+        font-size: 1.5rem;
+        color: white;
+        padding: 0 1em;
+    }
+
+    .header-menu #search-bar{
+        display: block;
+        width: 150px;
+        padding: .5em 1em;
+        margin: 0 1em;
+    }
+}
